@@ -1,4 +1,0 @@
-{
-    "US" :"https://api.db.nomics.world/v22/series/ISM/nm-pmi?facets=1&format=json&limit=1000&observations=1",
-    "CN" :"https://api.db.nomics.world/v22/series/NBS/M_A0B01?facets=1&format=json&limit=1000&observations=1&q=purchasing%20managers%20index"
-}
