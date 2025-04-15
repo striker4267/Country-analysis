@@ -1,0 +1,14 @@
+{
+    "ISM": "manufacturing-pmi",
+    "NMI": "services-pmi",
+    "UMCSENT": "consumer-confidence",
+    "BP": "building-permits",
+    "M2": "money-supply-m2",
+    "IR%UC": "interest-rate",
+    "CPIAUCNS": "consumer-price-index-cpi",
+    "CPILFESL": "core-consumer-prices",
+    "PPIALL": "producer-prices",
+    "PPICORE": "core-producer-prices",
+    "NFP": "non-farm-payrolls",
+    "UR": "unemployment-rate"
+  }
