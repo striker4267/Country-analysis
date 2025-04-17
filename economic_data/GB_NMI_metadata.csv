@@ -1,0 +1,15 @@
+,0
+units,points
+original_source,S&P Global
+title,United Kingdom Services PMI
+indicator,services pmi
+country,united kingdom
+source,Trading Economics
+id,united-kingdom/services-pmi
+description,"The S&P Global/CIPS UK Services PMI (Purchasing Managers' Index) is based on data collected from companies in the transport and communication sector, financial intermediation, business services, personal services, computing and IT and hotels and restaurants. The index tracks variables such as sales, employment, inventories and prices. A reading above 50 indicates that the services sector is generally expanding; below 50 indicates that it is generally declining.. This is only a limited sample of PMI headline data displayed on the Customer’s service, under licence from S&P Global. Full historic PMI headline data and all other PMI sub-index data and histories are available on subscription from S&P Global. Contact economics@spglobal.com for more details."
+frequency,MS
+start_date,2022-03-01
+end_date,2025-03-01
+min_value,48.7
+max_value,62.6
+length,37

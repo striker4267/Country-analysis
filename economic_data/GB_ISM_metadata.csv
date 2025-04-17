@@ -1,0 +1,15 @@
+,0
+units,points
+original_source,S&P Global
+title,United Kingdom Manufacturing PMI
+indicator,manufacturing pmi
+country,united kingdom
+source,Trading Economics
+id,united-kingdom/manufacturing-pmi
+description,"Markit/CIPS UK Manufacturing Purchasing Managers’ Index measures the performance of the manufacturing sector and is derived from a survey of 600 industrial companies. The Manufacturing Purchasing Managers Index is based on five individual indexes with the following weights: New Orders (30 percent), Output (25 percent), Employment (20 percent), Suppliers’ Delivery Times (15 percent) and Stock of Items Purchased (10 percent), with the Delivery Times index inverted so that it moves in a comparable direction. A reading above 50 indicates an expansion of the manufacturing sector compared to the previous month; below 50 represents a contraction; while 50 indicates no change. This is only a limited sample of PMI headline data displayed on the Customer’s service, under licence from S&P Global. Full historic PMI headline data and all other PMI sub-index data and histories are available on subscription from S&P Global. Contact economics@spglobal.com for more details."
+frequency,MS
+start_date,2022-03-01
+end_date,2025-03-01
+min_value,43.0
+max_value,55.8
+length,37

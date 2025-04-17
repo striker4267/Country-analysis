@@ -21,9 +21,8 @@ def get_data(c_code,tedata_lib):
         try:
             print(f"downloading {indicator_value} for {c_code} ...") 
 
-            scraped, metadata = scraper(indicator_value, c_code, tedata_lib)
+            data_series, metadata = scraper(indicator_value, c_code, tedata_lib)
 
-            data_series = scraped.series
 
 
             filename = sanitize_filename(f"{c_code}_{indicator_key}")
