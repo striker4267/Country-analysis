@@ -1,7 +1,0 @@
-{
-    "US" :"https://tradingeconomics.com/united-states/business-confidence",
-    "CN" :"https://tradingeconomics.com/china/manufacturing-pmi",
-    "UK": "https://tradingeconomics.com/united-kingdom/manufacturing-pmi",
-    "DE": "https://tradingeconomics.com/germany/manufacturing-pmi"
- 
-}
