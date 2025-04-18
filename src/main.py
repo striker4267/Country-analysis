@@ -4,6 +4,7 @@ import pandas as pd
 import os
 import json
 from data_getter import get_data
+from excel import make_excel
 
 
 def main(country = "ALL"):
@@ -26,7 +27,8 @@ def main(country = "ALL"):
         # Loop through each country and get its economic data
         # NOTE: There's a bug here - should be country, not country.key
         for country in country_dict:
-            get_data(country.key, ted)     
+            get_data(country.key, ted) 
+            make_excel(country)    
     else:
         # Download data for just the specified country
         get_data(country, ted)

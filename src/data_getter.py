@@ -1,8 +1,8 @@
-import pandas as pd
 import os
 import json
 from data_scraper import scraper
 from sanitize_filename import sanitize_filename
+from cleaner import clean
 
 def get_data(c_code, tedata_lib):
     """
@@ -50,6 +50,9 @@ def get_data(c_code, tedata_lib):
             # This includes information like data source, last update time, etc.
             metadata_path = os.path.join(output_dir, f"{filename}_metadata.csv")
             metadata.to_csv(metadata_path)
+
+            clean(csv_path)
+            clean(metadata_path)
 
             # Log successful download
             print(f"saved successfully {csv_path}")
