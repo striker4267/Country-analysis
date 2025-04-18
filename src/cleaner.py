@@ -2,6 +2,8 @@ import pandas as pd
 
 def clean(file_path):
 
+    #TODO: more sophisticated data cleaning
+
     df = pd.read_csv(file_path)
 
     cleaned_df = df.dropna()

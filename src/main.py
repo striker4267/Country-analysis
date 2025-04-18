@@ -26,12 +26,13 @@ def main(country = "ALL"):
 
         # Loop through each country and get its economic data
         # NOTE: There's a bug here - should be country, not country.key
-        for country in country_dict:
-            get_data(country.key, ted) 
-            make_excel(country)    
+        for country_code in country_dict:
+            get_data(country_code, ted) 
+            make_excel(country_code)    
     else:
         # Download data for just the specified country
         get_data(country, ted)
+        make_excel(country)
 
 if __name__ == "__main__":
     # When script is run directly, download data for Great Britain (GB)
