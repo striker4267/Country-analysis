@@ -4,11 +4,15 @@
     "UMCSENT": "consumer-confidence",
     "BP": "building-permits",
     "M2": "money-supply-m2",
-    "IR%UC": "interest-rate",
+    "IR%": "interest-rate",
     "CPIAUCNS": "consumer-price-index-cpi",
     "CPILFESL": "core-consumer-prices",
     "PPIALL": "producer-prices",
     "PPICORE": "core-producer-prices",
     "NFP": "non-farm-payrolls",
-    "UR": "unemployment-rate"
+    "UR": "unemployment-rate",
+    "GOVT-DEBT": "government-debt-to-gdp",
+    "GOVT-SD": "government-budget",
+    "GOVT-10": "government-bond-yield",
+    "CBBS": "central-bank-balance-sheet"
   }

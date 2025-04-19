@@ -17,19 +17,27 @@ def scraper(indicator, c_code, tedata_lib):
     # This mapping is needed to construct proper URLs for Trading Economics
     with open(r"src/T25.json", "r") as countries:
         countries = json.load(countries)
+    try:
     
-    # Get the URL-friendly country name from the country code
-    country = countries[c_code]
-    
-    # Construct the URL and scrape data from Trading Economics
-    scraped = tedata_lib.scrape_chart(url = f"https://tradingeconomics.com/{country}/{indicator}")
-    
-    # Special case handling for US manufacturing PMI
-    # The US uses "business-confidence" endpoint instead of "manufacturing-pmi"
-    if c_code == "US" and indicator == "manufacturing-pmi":
-        scraped = tedata_lib.scrape_chart(url = "https://tradingeconomics.com/united-states/business-confidence")
+        # Get the URL-friendly country name from the country code
+        country = countries[c_code]
+        
+        try:
+            # Construct the URL and scrape data from Trading Economics
+            scraped = tedata_lib.scrape_chart(url = f"https://tradingeconomics.com/{country}/{indicator}")
+            
+            # Special case handling for US manufacturing PMI
+            # The US uses "business-confidence" endpoint instead of "manufacturing-pmi"
+            if c_code == "US" and indicator == "manufacturing-pmi":
+                scraped = tedata_lib.scrape_chart(url = "https://tradingeconomics.com/united-states/business-confidence")
 
-    # Return both the data series and metadata as separate objects
-    # The series contains the actual economic data points
-    # The metadata contains information about the data source, units, etc.
-    return scraped.series, pd.Series(scraped.metadata)
+            # Return both the data series and metadata as separate objects
+            # The series contains the actual economic data points
+            # The metadata contains information about the data source, units, etc.
+            return scraped.series, pd.Series(scraped.metadata)
+        except:
+            # catches errors where information is not available
+            print(f"Indicator {indicator} does not exist for {country} or could not be scraped")
+    except:
+        print(f"Error in scraper function")
+        return None, None

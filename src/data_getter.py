@@ -22,13 +22,12 @@ def get_data(c_code, tedata_lib):
         os.makedirs(output_dir)
     
     # Uncommented in production to use the full set of indicators
-    # with open("src/indicators.json") as indicators:
-    #     indicators_dict = json.load(indicators)
-    
-    # Using a reduced set of indicators for testing purposes
-    # This speeds up the development/testing process
-    with open("src/indicators_TEST.json") as indicators:
+    with open("src/indicators.json") as indicators:
         indicators_dict = json.load(indicators)
+    
+    #Uncomment to test
+    # with open("src/indicators_TEST.json") as indicators:
+    #     indicators_dict = json.load(indicators)
 
     # Loop through each indicator and try to download its data
     for indicator_key, indicator_value in indicators_dict.items():
